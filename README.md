@@ -49,4 +49,16 @@ There are two sections:
 
 **Python Update:**
 
-`pip-review -i`
+List all Old Pip Libraries: `pip-review`
+
+Go Through Each Update: `pip-review -i`
+
+**Bleachbit Cleaners**
+
+It is highly unadvised to run all the cleaners unless it is a clean, fresh install.
+
+Install: `sudo apt-get install bleachbit`
+
+Cleaner List: `bleachbit -l > cleanlist`
+
+Run All Cleaners: `while read line; do echo $line; sudo bleachbit -oc $line; done < list`
