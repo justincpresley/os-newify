@@ -47,7 +47,7 @@ There are two sections:
 * **full-upgrade** - performs the function of upgrade but will remove currently installed packages if this is needed to upgrade the system as a whole (fixing bad dependencies then)
 * **autoremove**, **autoclean** and **clean** - clean old packages which are not needed any more
 
-**Python Update:**
+**Python Library Updates:**
 
 List all Old Pip Libraries: `pip-review`
 
