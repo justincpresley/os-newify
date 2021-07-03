@@ -49,6 +49,8 @@ There are two sections:
 
 **Python Library Updates:**
 
+Install: `pip3 install pip-review`
+
 List all Old Pip Libraries: `pip-review`
 
 Go Through Each Update: `pip-review -i`
