@@ -63,4 +63,4 @@ Install: `sudo apt-get install bleachbit`
 
 Cleaner List: `bleachbit -l > cleanlist`
 
-Run All Cleaners: `while read line; do echo $line; sudo bleachbit -oc $line; done < list`
+Run All Cleaners: `while read line; do echo $line; sudo bleachbit -oc $line; done < cleanlist`
