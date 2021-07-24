@@ -2,7 +2,7 @@
 
 A set of steps to update, clean, and reset different types of operating systems to boost security and make the device(s) more efficient.
 
-Whether to update your system is a good security discussion to have. It was common practice to ALWAYS update absolutely everything in order to to make your system as secure as possible. Now, it's being discovered that updates in general have unknown vulernabilites like any new piece of software. Personally being a security professional, I would rather have an unknown (to the public) vulnerabily than an already known one. Along with that, constantly updating your system grantees that if a software bug/vulnerability does appear that latest updates will catch it before it is expolited.
+Whether to update your system is a good security discussion to have. It was common practice to ALWAYS update absolutely everything in order to to make your system as secure as possible. Now, it's being discovered that updates in general have unknown vulernabilites like any new piece of software (which should be common knowledge). Personally being a security professional, I would rather have an unknown (to the public) vulnerabily than an already known one. Along with that, constantly updating your system grantees that if a software bug/vulnerability does appear that latest updates will catch it before it is expolited.
 
 Cleaning / Resetting is mostly safe with modern technologies. Of course, past logs can help a system recover or eliminate a small threat from turning into a large one.
 
