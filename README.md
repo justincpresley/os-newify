@@ -19,7 +19,7 @@ There are two sections:
 **Update** (any that may be avaliable to your device):
 * Microsoft Store: `get updates`
 * Windows 10: `check for updates`
-* Driver Booster 8: `scan (for driver updates)`
+* Driver Easy: `scan / manual update all drivers`
 * Intel: `driver updates`
 * Nvidia GeForce: `check GPU driver`
 
