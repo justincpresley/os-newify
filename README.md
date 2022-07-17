@@ -1,27 +1,39 @@
 # os-newify: Operating System Newify
 
-A set of steps to update, clean, and reset different types of operating systems to boost security and make the device(s) more efficient.
+A set of steps to update, clean, and reset different types of operating systems to boost security and make the device(s) more efficient. There is also a list of useful software and different methods like encrypting word and pdf documents for free.
 
-Whether to update your system is a good security discussion to have. It was common practice to ALWAYS update absolutely everything in order to to make your system as secure as possible. Now, it's being discovered that updates in general have unknown vulernabilites like any new piece of software (which should be common knowledge). Personally being a security professional, I would rather have an unknown (to the public) vulnerabily than an already known one. Along with that, constantly updating your system grantees that if a software bug/vulnerability does appear that latest updates will catch it before it is expolited. Also, there is a direct rasing correlation between how old your system is to how many vulnerabilities it has.
+Whether to update your system is a good security discussion to have. It was common practice to ALWAYS update absolutely everything in order to to make your system as secure as possible. Now, it's being discovered that updates in general have unknown vulernabilites like any new piece of software (which should be common knowledge). Personally being a security professional, I would rather have an unknown (to the public) vulnerabily than an already known one, and the vast majority agrees. Along with that, constantly updating your system grantees that if a software bug/vulnerability does appear that latest updates will catch it before it is expolited. Have you read about the latest cyber attack? It seems like everyday there is a system being exploited via already-patched vulnerabilities. Also, there is a direct rising correlation between how old your system is to how many vulnerabilities it has. Vulnerabilities do come from how the hardware is designed / implemented too!
 
 Cleaning / Resetting is mostly safe with modern technologies. Of course, past logs can help a system recover or eliminate a small threat from turning into a large one.
 
-I would update your system as much as possible while cleaning/resetting not as frequent. This advice is subject to change.
+I would update your system as much as possible while cleaning/resetting not as frequent.
 
 There are two sections:
 
-* **Windows 10**
+* **Windows**
 * **Linux Distributions**
 
 
-## Windows 10
+## Windows
+
+**Useful Free Software and Methods**:
+
+* MalwareBytes: `anti-malware/virus`
+* Driver Easy: `approved driver updates`
+* PDFEncrypt: `encrypt a pdf file`
+* KeePass 2: `self-contained password vault`
+* Load Microsoft Word Documents: `insert -> object -> from-file`
+* Encrypt Microsoft Word Documents: `file -> info -> protect doc -> with password`
 
 **Update** (any that may be avaliable to your device):
+
 * Microsoft Store: `get updates`
-* Windows 10: `check for updates`
+* Windows: `check for updates`
 * Driver Easy: `scan / manual update all drivers`
 * Intel: `driver updates`
 * Nvidia GeForce: `check GPU driver`
+* Microsoft Office 365 Apps: `account -> update options`
+* Any other software updates
 
 **Clean / Reset**:
 
@@ -44,6 +56,10 @@ There are two sections:
 * CommandLine: `"sfc /scannow"`
 
 ## Linux Distributions
+
+**Useful Free Software and Methods**:
+
+* Use LibreSSL instead of OpenSSL
 
 **General Update:**
 
