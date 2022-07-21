@@ -16,14 +16,31 @@ There are two sections:
 
 ## Windows
 
-**Useful Free Software and Methods**:
+**Free Downloadable Software**:
 
 * MalwareBytes: `anti-malware/virus`
 * Driver Easy: `approved driver updates`
 * PDFEncrypt: `encrypt a pdf file`
 * KeePass 2: `self-contained password vault`
+* Process Hacker: `enhanced monitoring system tool`
+
+**Useful Methods**:
+
 * Load Microsoft Word Documents: `insert -> object -> from-file`
 * Encrypt Microsoft Word Documents: `file -> info -> protect doc -> with password`
+
+**Built-in Security Hardening Tools**:
+
+* Event Viewer: `auditing and logging`
+* Task Manager: `process management - viewing`
+* Task Scheduler: `process management - scheduling`
+* Active Directory: `policy enforcement`
+* Group Policy Management Concole: `policy enforcement`
+* Registry: `system management`
+* PowerShell: `system management`
+* Windows Terminal / Command Console: `system management`
+* Windows Security: `system mangement`
+* Windows Defender Firewall: `network management`
 
 **Update** (any that may be avaliable to your device):
 
@@ -54,6 +71,7 @@ There are two sections:
 * Optimize Drive: `optimize`
 * CommandLine: `"chkdsk"`
 * CommandLine: `"sfc /scannow"`
+
 
 ## Linux Distributions
 
