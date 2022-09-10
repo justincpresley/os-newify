@@ -23,6 +23,7 @@ There are two sections:
 * PDFEncrypt: `encrypt a pdf file`
 * KeePass 2: `self-contained password vault`
 * Process Hacker: `enhanced monitoring system tool`
+* Sysinternals Suite: `enhanced system toolset`
 
 **Useful Methods**:
 
@@ -35,12 +36,13 @@ There are two sections:
 * Task Manager: `process management - viewing`
 * Task Scheduler: `process management - scheduling`
 * Active Directory: `policy enforcement`
-* Group Policy Management Concole: `policy enforcement`
+* Group Policy Management Console: `policy enforcement`
 * Registry: `system management`
 * PowerShell: `system management`
 * Windows Terminal / Command Console: `system management`
 * Windows Security: `system mangement`
 * Windows Defender Firewall: `network management`
+* Malicious Software Removal Tool (mrt): `system management`
 
 **Update** (any that may be avaliable to your device):
 
@@ -55,6 +57,7 @@ There are two sections:
 **Clean / Reset**:
 
 * MalwareBytes: `scan`
+* Run: `"mrt" -> quick scan or full`
 * Privacy Settings: `location -> clear`
 * File Explorer: `view -> options -> clear file explorer history`
 * Run: `"wsreset"`
