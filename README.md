@@ -21,7 +21,7 @@ There are two sections:
 * MalwareBytes: `anti-malware/virus`
 * Driver Easy: `approved driver updates`
 * PDFEncrypt: `encrypt a pdf file`
-* KeePass 2: `self-contained password vault`
+* KeePassXC or KeePass2: `self-contained password vault`
 * Process Hacker: `enhanced monitoring system tool`
 * Sysinternals Suite: `enhanced system toolset`
 
