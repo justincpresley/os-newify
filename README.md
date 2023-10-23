@@ -8,12 +8,6 @@ Cleaning / Resetting is mostly safe with modern technologies. Of course, past lo
 
 I would update your system as much as possible while cleaning/resetting not as frequent.
 
-There are two sections:
-
-* **Windows**
-* **Linux Distributions**
-
-
 ## Windows
 
 **Free Downloadable Software**:
@@ -21,7 +15,7 @@ There are two sections:
 * MalwareBytes: `anti-malware/virus`
 * Driver Easy: `approved driver updates`
 * PDFEncrypt: `encrypt a pdf file`
-* KeePassXC or KeePass2: `self-contained password vault`
+* KeePassXC: `self-contained password vault`
 * Process Hacker: `enhanced monitoring system tool`
 * Sysinternals Suite: `enhanced system toolset`
 
