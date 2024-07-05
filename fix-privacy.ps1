@@ -108,17 +108,6 @@ Takeown-Registry("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Spynet"
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Spynet" "SpyNetReporting" 0       # write-protected even after takeown ?!
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Spynet" "SubmitSamplesConsent" 0
 
-# The following section can cause problems with network / internet connectivity
-# in generel. See the corresponding issue:
-# https://github.com/W4RH4WK/Debloat-Windows-10/issues/270
-#Write-Output "Do not share wifi networks"
-#$user = New-Object System.Security.Principal.NTAccount($env:UserName)
-#$sid = $user.Translate([System.Security.Principal.SecurityIdentifier]).value
-#New-FolderForced -Path ("HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features\" + $sid)
-#Set-ItemProperty -Path ("HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features\" + $sid) "FeatureStates" 0x33c
-#Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" "WiFiSenseCredShared" 0
-#Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" "WiFiSenseOpen" 0
-
 Write-Output "Disable camera on lock, Windows Hello will still work"
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization" -Name "NoLockScreenCamera" -Type "DWORD" -Value 1 -Force
 
@@ -135,16 +124,25 @@ If (!(Test-Path $Period)) {
 }
 Set-ItemProperty $Period PeriodInNanoSeconds -Value 0
 
-Write-Output "Disabling Wi-Fi Sense"
-$WifiSense1 = "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting"
-$WifiSense2 = "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots"
-$WifiSense3 = "HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\config"
-If (!(Test-Path $WifiSense1)) {
-  New-Item $WifiSense1
-}
-Set-ItemProperty $WifiSense1  Value -Value 0
-If (!(Test-Path $WifiSense2)) {
-  New-Item $WifiSense2
-}
-Set-ItemProperty $WifiSense2  Value -Value 0
-Set-ItemProperty $WifiSense3  AutoConnectAllowedOEM -Value 0
+# The following section can cause problems with network / internet connectivity
+#Write-Output "Do not share wifi networks"
+#$user = New-Object System.Security.Principal.NTAccount($env:UserName)
+#$sid = $user.Translate([System.Security.Principal.SecurityIdentifier]).value
+#New-FolderForced -Path ("HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features\" + $sid)
+#Set-ItemProperty -Path ("HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features\" + $sid) "FeatureStates" 0x33c
+#Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" "WiFiSenseCredShared" 0
+#Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\features" "WiFiSenseOpen" 0
+
+#Write-Output "Disabling Wi-Fi Sense"
+#$WifiSense1 = "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting"
+#$WifiSense2 = "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots"
+#$WifiSense3 = "HKLM:\SOFTWARE\Microsoft\WcmSvc\wifinetworkmanager\config"
+#If (!(Test-Path $WifiSense1)) {
+#  New-Item $WifiSense1
+#}
+#Set-ItemProperty $WifiSense1  Value -Value 0
+#If (!(Test-Path $WifiSense2)) {
+#  New-Item $WifiSense2
+#}
+#Set-ItemProperty $WifiSense2  Value -Value 0
+#Set-ItemProperty $WifiSense3  AutoConnectAllowedOEM -Value 0
