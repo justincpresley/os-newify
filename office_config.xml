@@ -1,0 +1,16 @@
+<Configuration>
+<Add OfficeClientEdition="64" Channel="Current">
+<Product ID="O365HomePremRetail">
+<Language ID="en-us" />
+<ExcludeApp ID="Access" />
+<ExcludeApp ID="Lync" />
+<ExcludeApp ID="OneDrive" />
+<ExcludeApp ID="OneNote" />
+<ExcludeApp ID="Publisher" />
+<ExcludeApp ID="Teams" />
+<ExcludeApp ID="Outlook" />
+</Product>
+</Add>
+<Updates Enabled="TRUE" />
+<Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>
