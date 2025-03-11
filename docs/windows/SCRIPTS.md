@@ -24,6 +24,15 @@ Many aspects of these scripts were taken from other repositories.
 * [W4RH4WK](https://github.com/W4RH4WK/Debloat-Windows-10/tree/master) - [license](/copy/license-w4rh4wk.md)
 * [simeononsecurity](https://github.com/simeononsecurity/Windows-Optimize-Harden-Debloat/tree/master) - [license](/copy/license-simeononsecurity.md)
 
+### Office 365
+
+You can download select products from Office 365 in order to reduce your attack surface and bloat.
+
+Download [the Office Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) and run it with the configuration found in this repository.
+This limits the install to only Word, Excel, and PowerPoint. (you can customize the script to your liking)
+
+[Helpful Step-by-Step Guide](https://www.winhelponline.com/blog/custom-install-uninstall-office-apps/)
+
 **Notes / Advice**
 * `dns-data.ps1` assumes you will use Quad9. You must still manually change your default DNS provider to [Quad9 Info](https://www.quad9.net/service/service-addresses-and-features) by `Settings -> Network & internet -> Wi-Fi -> Wi-Fi/Hardware Properties`.
 * Look into `simeononsecurity's repo` for a more intense custom script.
